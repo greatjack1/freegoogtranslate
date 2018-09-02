@@ -7,14 +7,10 @@ First add the jar from the out directory in this project to your android / java 
 
 Then use the following code.
 
-`
-  Translater tans = new Translater();
-  
-  String input = "This is the text that I want to translate";
-  
-  String output = tans.translate(Languages.English,Languages.Hebrew,input);
-  
- `
+
+Translater tans = new Translater();
+String input = "This is the text that I want to translate";
+String output = tans.translate(Languages.English,Languages.Hebrew,input);
  
  Thats it, simple easy and free.
  
