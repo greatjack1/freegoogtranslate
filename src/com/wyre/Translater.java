@@ -8,11 +8,25 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+/**
+ * This class is used to perform the actual translating
+ */
 public class Translater
 {
+    /**
+     * Public constructor with no arguement
+     */
     public Translater(){
 
     }
+
+    /**
+     * Method to perform the actual translation
+     * @param sourceLanguageCode The iso code representing the source language
+     * @param targetLanguageCode The iso code representing the target language
+     * @param textToTranslate The text to be translated
+     * @return The string translated to the target language or a error message
+     */
     public String translate(String sourceLanguageCode,String targetLanguageCode,String textToTranslate) {
         try {
             URL url = new URL("https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + sourceLanguageCode + "&tl=" + targetLanguageCode + "&dt=t&q=" + URLEncoder.encode(textToTranslate, "UTF-8"));
