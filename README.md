@@ -13,6 +13,7 @@ Then use the following code.
   String input = "This is the text that I want to translate";
   
   String output = tans.translate(Languages.English,Languages.Hebrew,input);
+  
  `
  
  Thats it, simple easy and free.
